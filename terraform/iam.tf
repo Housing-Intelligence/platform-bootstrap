@@ -20,7 +20,7 @@ resource "aws_iam_role" "github_actions_general" {
           }
 
           StringLike = {
-            "token.actions.githubusercontent.com:sub" = format("repo:%s/hi-platform-cicd:*", var.github_org)
+            "token.actions.githubusercontent.com:sub" = "repo:Housing-Intelligence@322736322/hi-platform-cicd@1353647410:*"
           }
         }
       }
